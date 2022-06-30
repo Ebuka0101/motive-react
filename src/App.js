@@ -24,10 +24,10 @@ function App() {
         </nav>
         <Routes>
           {/* <Route path="/landing" element={<LandingPage/>} /> */}
-          <Route exact path="/" element={<Home />} />   
-          <Route path="/plan" element={ <Plan />} /> 
-          <Route path="/help" element={<ContactUs />} />
-          <Route path="/eventType" element={<EventType />} />
+          <Route exact path='/' element={<Home />} />   
+          <Route path='/plan' element={ <Plan />} /> 
+          <Route path='/help' element={<ContactUs />} />
+          <Route path='/eventType' element={<EventType />} />
         </Routes>
       </BrowserRouter>
       {/* <EventType /> */}
