@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+
+import React from "react";
+
+import Home from "./Pages/home";
+import Plan from "./Pages/plan";
+import ContactUs from "./Pages/contactUs";
+import EventType from "./Pages/eventType";
+import LandingPage from "./Pages/landing";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <nav>
+          <h1 style={{fontFamily: "Special Elite"}}>Motivv</h1>
+          {/* <Link to='/landing'>Landing </Link> */}
+          <Link to='/home'>Home </Link>
+          <Link to='/plan'>Plan </Link>
+          <Link to='/help'>Help </Link>
+          <Link to="/eventType">Event Type</Link>
+        </nav>
+        <Routes>
+          {/* <Route path="/landing" element={<LandingPage/>} /> */}
+          <Route path="/home" element={<Home/>} />   
+          <Route path="/plan" element={ <Plan />} /> 
+          <Route path="/help" element={<ContactUs/>} />
+          <Route path="/eventType" element={<EventType/>} />
+        </Routes>
+      </BrowserRouter>
+      {/* <EventType /> */}
+      {/* <ContactUs /> */}
+      {/* <Plan /> */}
     </div>
   );
 }

@@ -1,0 +1,39 @@
+.bgHeaderHeight{
+    max-height: 555px;
+}
+
+.featuredEventPoster{
+    max-width: 350px;
+    max-height: 555px;
+}
+
+.featuredEventInfo{
+    max-height: 250px;
+    max-width: 500px;
+}
+
+.eventsList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+/* .extraContainerStyles{
+    margin: 0 auto;
+    padding: 0 2rem;
+} */
+
+.listPosterContainer{
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    background-color: #028700;
+    cursor: pointer;
+}
+
+.listPosterImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

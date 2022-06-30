@@ -1,0 +1,50 @@
+.intro{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+  }
+
+.welcomeBox {
+    width: clamp(50%, 1200px, 90%);
+    height: min(100%, 500px);
+    margin: auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+
+div.welcomeBox h1 {
+    font-family: "Special Elite", cursive;
+    text-align: center;
+    color:#9e00c5;
+    font-size: clamp(40px, 8vw, 120px);
+}
+
+div.welcomeBox h3 {
+    font-family: "serif";
+    text-align: center;
+    color:#424242;
+    margin-top: min(20%, 50px);
+    font-size: clamp(16px, 8vw, 32px);
+}
+
+.customBtnStyle{
+    font-size: clamp(18px, 8vw,32px);
+    width: clamp(120px, 85vw, 28rem);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: min(20%, 50px);
+    margin-bottom: 1vh;
+}
+

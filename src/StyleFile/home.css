@@ -1,0 +1,89 @@
+
+/* mainevent will have a fixed width reponsive to window size and variable height to match poster resolution */
+.mainEvent{
+    height: min(90%,800px);
+    padding: auto;
+    /* background-color: yellow; */
+    width: clamp(20%, 600px, 90%); 
+}
+
+.mainEvent.mobile{
+    height: 600px;
+    /* background-color: yellow; */
+    padding: auto;
+    width: clamp(70%,550px, 95%); 
+}
+
+.quickInfo{
+    height: 350px;
+    width: 90%;
+}
+
+.quickInfo.mobile{
+    padding: auto;
+    height: 350px;
+    width: clamp(60%, 300px, 90%)
+}
+
+.desktop{
+    padding: auto;
+    /* background-color: aqua; */
+  }
+
+.quickInfoContainer{
+    display: flex;
+    flex-direction: column;
+    width: clamp(20%, 600px, 40%);
+    align-items: center;
+    justify-content: center;
+}
+
+.homeMoreInfoBtnStyle{
+    font-size: 24px;
+    width: clamp(200px, 10vw, 200px);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 1vh;
+}
+
+.viewInfoBtn{
+    font-size: 20px;
+    width: 200px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-color: white;
+}
+
+.getStartedBtnStyle{
+    font-size: 20px;
+    width: 200px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.badge-style{
+    height: 220px;
+    max-width: 100%;
+}
+
+.customListWrapper{
+    width: 10rem;
+    margin: 0 auto;
+}
+
+.maxCardWidth{
+    width: clamp();
+}
+
+ol.cnt{
+    list-style: none;
+    counter-reset: start 3;
+}
+  
+  
+ol.cnt > li:before{
+    counter-increment: start;
+    content: counter(start) ". ";
+}
+
+

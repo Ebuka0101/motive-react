@@ -1,0 +1,51 @@
+:root{
+    --primary: #d500f9;
+    --secondary: white;
+}
+
+.routeBtnContainer{
+    max-height: 50px;
+    width: fit-content;
+}
+
+.btn{
+    font-family: serif;
+    border-radius: 5px;
+
+}
+
+.btn--animate{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btn--animate:hover{
+    transform: translateY(-5px);
+}
+
+.btn--solid {
+    background-color: var(--primary);
+    color: white;
+    border-width: 2px;
+    border-color: var(--primary);
+}
+
+.btn--solid:hover{
+    color: var(--primary);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--primary);
+}
+
+.btn--outline{
+    color: var(--primary);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--primary);
+}
+
+.btn--outline:hover{
+    background-color: var(--primary);
+    color: white;
+    border-width: 2px;
+    border-color: var(--primary);
+}
