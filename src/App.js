@@ -6,7 +6,7 @@ import Home from "./Pages/home";
 import Plan from "./Pages/plan";
 import ContactUs from "./Pages/contactUs";
 import EventType from "./Pages/eventType";
-import LandingPage from "./Pages/landing";
+// import LandingPage from "./Pages/landing";
 
 
 
@@ -24,10 +24,10 @@ function App() {
         </nav>
         <Routes>
           {/* <Route path="/landing" element={<LandingPage/>} /> */}
-          <Route exact path="/" element={<Home/>} />   
+          <Route exact path="/" element={<Home />} />   
           <Route path="/plan" element={ <Plan />} /> 
-          <Route path="/help" element={<ContactUs/>} />
-          <Route path="/eventType" element={<EventType/>} />
+          <Route path="/help" element={<ContactUs />} />
+          <Route path="/eventType" element={<EventType />} />
         </Routes>
       </BrowserRouter>
       {/* <EventType /> */}
