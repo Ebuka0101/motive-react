@@ -17,14 +17,14 @@ function App() {
         <nav>
           <h1 style={{fontFamily: "Special Elite"}}>Motivv</h1>
           {/* <Link to='/landing'>Landing </Link> */}
-          <Link to='/home'>Home </Link>
+          <Link to='/'>Home </Link>
           <Link to='/plan'>Plan </Link>
           <Link to='/help'>Help </Link>
           <Link to="/eventType">Event Type</Link>
         </nav>
         <Routes>
           {/* <Route path="/landing" element={<LandingPage/>} /> */}
-          <Route path="/home" element={<Home/>} />   
+          <Route path="/" element={<Home/>} />   
           <Route path="/plan" element={ <Plan />} /> 
           <Route path="/help" element={<ContactUs/>} />
           <Route path="/eventType" element={<EventType/>} />
