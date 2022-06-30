@@ -17,7 +17,7 @@ function App() {
         <nav>
           <h1 style={{fontFamily: "Special Elite"}}>Motivv</h1>
           {/* <Link to='/landing'>Landing </Link> */}
-          <Link to='.'>Home </Link>
+          <Link to='/'>Home </Link>
           <Link to='/plan'>Plan </Link>
           <Link to='/help'>Help </Link>
           <Link to="/eventType">Event Type</Link>
