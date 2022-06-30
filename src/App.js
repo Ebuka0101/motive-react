@@ -24,7 +24,7 @@ function App() {
         </nav>
         <Routes>
           {/* <Route path="/landing" element={<LandingPage/>} /> */}
-          <Route path="." element={<Home/>} />   
+          <Route exact path="/" element={<Home/>} />   
           <Route path="/plan" element={ <Plan />} /> 
           <Route path="/help" element={<ContactUs/>} />
           <Route path="/eventType" element={<EventType/>} />
